@@ -173,27 +173,27 @@ const data: IPageData = {
         type: "request",
         title: "Заявка",
         description: "Оставляете заявку на нашем сайте.",
-        img: "/assets/order/pink/deliv1.png",
+        img: "/assets/order/blue/deliv1.png",
       },
       {
         type: "call",
         title: "Звонок",
         description:
           "Ожидаете звонка нашего менеджера для уточнения адреса доставки и сопутствующих нюансов..",
-        img: "/assets/order/pink/deliv2.png",
+        img: "/assets/order/blue/deliv2.png",
       },
       {
         type: "send",
         title: "Отправка",
         description: "В тот же день отправляем ваш заказ в любой город Украины.",
-        img: "/assets/order/pink/deliv3.png",
+        img: "/assets/order/blue/deliv3.png",
       },
       {
         type: "receiving",
         title: "Получение",
         description:
           "Через 1-3 дня забираете товар на указанном вами отделении почты и там же производите его оплату.",
-        img: "/assets/order/pink/deliv4.png",
+        img: "/assets/order/blue/deliv4.png",
       },
     ],
   },
