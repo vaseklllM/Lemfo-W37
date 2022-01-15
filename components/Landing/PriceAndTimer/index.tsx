@@ -14,7 +14,7 @@ export default function PriceAndTimer(props: IProps) {
   return (
     <div>
       <div className={classes.PriceAndTimer}>
-        <BackTimer greyColor={colors.timerGray} greenColor={colors.green} />
+        <BackTimer greyColor={colors.timerGray} greenColor={colors.title} />
         <div className={classes.hr} style={{ backgroundColor: colors.hr }} />
         <Price price={price} colors={colors} className={classes.price} />
       </div>

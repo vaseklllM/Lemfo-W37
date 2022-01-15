@@ -30,11 +30,11 @@ export default function SectionBuy(props: ISectionBuyProps) {
       <img className={classes.venzel} src={venzel} alt='' />
 
       <div className={classes.time_and_price}>
-        <BackTimer greyColor={colors.grey1} greenColor={colors.green} />
+        <BackTimer greyColor={colors.grey1} greenColor={colors.title} />
         <div className={classes.hr} style={{ backgroundColor: colors.hr }} />
         <Price price={price} colors={colors} />
       </div>
-      {loader && <Spiner className={classes.spiner} color={colors.green} />}
+      {loader && <Spiner className={classes.spiner} color={colors.title} />}
       <Inputs setLoader={setLoader} />
       <RemainingForThePromotionRow colors={colors} />
     </section>

@@ -12,7 +12,7 @@ export default function RemainingForThePromotionRow(props: IProps) {
   return (
     <div className={classes.RemainingForThePromotionRow}>
       <div className={classes.sequre}>
-        <SequrityIcon color={colors.green} className={classes.sequreicon} />
+        <SequrityIcon color={colors.title} className={classes.sequreicon} />
         <Span14 className={classes.sequre_text}>Защита покупателя</Span14>
       </div>
       <div className={classes.vertical_hr} />

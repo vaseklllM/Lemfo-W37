@@ -26,7 +26,7 @@ export default function BackTimerFirstSection(props: IProps) {
             <CheckText
               className={classes.adventages_item}
               key={index}
-              color={colors.green}
+              color={colors.title}
             >
               {el}
             </CheckText>

@@ -7,14 +7,17 @@ import Order from "./Order"
 import CompanyName from "./CompanyName"
 import ProductImageBlock from "./ProductImageBlock"
 import BackTimerFirstSection from "./BackTimerFirstSection"
-// import PhoneNumber from "./PhoneNumber"
 import SectionBuy from "./SectionBuy"
 import classes from "./style.module.scss"
 import IStore from "../../store/interface/IStore"
-import { connect } from "react-redux"
-import { IPageData } from "../../interfaces/ISite"
+import {connect} from "react-redux"
+import {IPageData} from "../../interfaces/ISite"
+import PhoneNumber from "./PhoneNumber";
+
+
+
 export interface IColors {
-  green: string
+  title: string
   grey: string
   grey1: string
   timerGray: string
@@ -26,10 +29,10 @@ export interface IColors {
   starsColor: string
 }
 
-export const titleColor: string = "#EF7385"
+export const titleColor: string = "#3867d6"
 
 const colors: IColors = {
-  green: titleColor,
+  title: titleColor,
   grey: "#2f3339",
   grey1: "#f7f8f9",
   timerGray: "#EFF2F5",
@@ -46,7 +49,7 @@ interface Props {
 }
 
 function Landing(props: Props) {
-  const { landingData } = props
+  const {landingData} = props
 
   const {
     phoneNumber,
@@ -77,28 +80,28 @@ function Landing(props: Props) {
 
   return (
     <div className={classes.main}>
-      {/* <PhoneNumber>{phoneNumber}</PhoneNumber> */}
-      <CompanyName name={companyName} backgroundColor={colors.green} />
+      <PhoneNumber>{phoneNumber}</PhoneNumber>
+      <CompanyName name={companyName} backgroundColor={colors.title}/>
       {productImageBlock()}
-      <BackTimerFirstSection colors={colors} price={price} advantages={advantages} />
-      <Video data={video} />
-      <Description data={descriptionContainer} />
-      <Comparison data={comparison} bacColor={colors.grey} buttonColor={colors.orange} />
-      <Instruction data={instruction} />
+      <BackTimerFirstSection colors={colors} price={price} advantages={advantages}/>
+      <Video data={video}/>
+      <Description data={descriptionContainer}/>
+      <Comparison data={comparison} bacColor={colors.grey} buttonColor={colors.orange}/>
+      <Instruction data={instruction}/>
       <ProductReviews
         data={feedbacks}
-        green={colors.green}
+        green={colors.title}
         starsColor={colors.starsColor}
       />
-      <Order data={order} bacColor={colors.grey} />
-      <CompanyName name={companyName} backgroundColor={colors.green} />
+      <Order data={order} bacColor={colors.grey}/>
+      <CompanyName name={companyName} backgroundColor={colors.title}/>
       {productImageBlock(1, 1)}
-      <SectionBuy colors={colors} price={price} />
-      {/* <PhoneNumber>{phoneNumber}</PhoneNumber> */}
+      <SectionBuy colors={colors} price={price}/>
+      <PhoneNumber>{phoneNumber}</PhoneNumber>
     </div>
   )
 }
 
-const mapState = ({ landingData }: IStore) => ({ landingData: landingData.data })
+const mapState = ({landingData}: IStore) => ({landingData: landingData.data})
 
 export default connect(mapState)(Landing)

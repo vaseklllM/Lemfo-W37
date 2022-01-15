@@ -1,6 +1,6 @@
-import { useState } from "react"
+import {useState} from "react"
 import classes from "./style.module.scss"
-import { PlayIcon } from "./icons"
+import {PlayIcon} from "./icons"
 
 interface IProps {
   data: {
@@ -9,12 +9,12 @@ interface IProps {
   }
 }
 
-const index = (props: IProps) => {
-  const { data } = props
+const Video = (props: IProps) => {
+  const {data} = props
 
   if (!data) return null
 
-  const { img, url } = data
+  const {img, url} = data
 
   const [isPlay, setIsPlay] = useState<boolean>(false)
 
@@ -34,14 +34,14 @@ const index = (props: IProps) => {
       <section
         className={classes.container}
         onClick={() => setIsPlay(true)}
-        style={{ backgroundImage: `url(${img})` }}
+        style={{backgroundImage: `url(${img})`}}
       >
         <div className={classes.icon_wrapper}>
-          <PlayIcon className={classes.video_icon} />
+          <PlayIcon className={classes.video_icon}/>
         </div>
       </section>
     )
   }
 }
 
-export default index
+export default Video
