@@ -54,7 +54,7 @@ function Inputs(props: IInputsProps) {
     if (ok) {
       setLoader(false)
       changePhoneNumber(defPhoneNum)
-      fbq.event('Purchase', { currency: 'UAH', value: 499 })
+      fbq.event('Purchase', { currency: 'UAH', value: 1090 })
       router.push("/thanks")
     }
   }
