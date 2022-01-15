@@ -1,0 +1,59 @@
+
+.title_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  .title {
+    text-align: center;
+    color: white;
+    width: max-content;
+  }
+}
+
+.img {
+  width: 480px;
+  height: 480px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ratting{
+  height: 48px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+
+  .star {
+    width: 20px;
+    margin-left: 2px;
+  
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .leftText {
+    margin-left: 10px;
+
+    .vote {
+      margin-left: 5px;
+    }
+  }
+
+  .hr {
+    width: 1px;
+    height: 24px;
+    margin-left: 20px;
+  }
+
+  .rightText {
+    margin-left: 20px;
+
+    .vote {
+      margin-left: 5px;
+    }
+  }
+}

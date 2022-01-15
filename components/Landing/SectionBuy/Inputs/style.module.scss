@@ -1,0 +1,87 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .btn {
+    width: 360px;
+    height: 80px;
+    line-height: 80px;
+    margin: 15px auto 0 auto;
+    display: block;
+    background: #fa9535;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 3px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+    
+
+
+  }
+
+  .input_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .input_icon {
+      position: absolute;
+      left: 23px;
+      width: 21px;
+      z-index: 2;
+      top: 35px;
+      pointer-events: none;
+    }
+
+    .phone_icon {
+      transform: rotate(90deg);
+      top: 40px;
+    }
+
+    .input {
+      position: relative;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      width: 360px;
+      box-sizing: border-box;
+      height: 70px;
+      padding: 0 20px 0 62px;
+      background: #f7f8f9;
+      font-size: 16px;
+      font-weight: 400;
+      color: #222;
+      font-family: "Roboto", sans-serif;
+
+      &:not(:first-child) {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .input_err {
+    .input_icon {
+      fill: red;
+    }
+
+    .input {
+      border: 1px solid red;
+      color: red;
+
+      &::placeholder {
+        color: red;
+      }
+    }
+  }
+
+  .err_text {
+    color: red;
+  }
+}
+

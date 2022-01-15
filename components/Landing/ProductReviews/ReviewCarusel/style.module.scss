@@ -1,0 +1,72 @@
+.ReviewCarusel {
+
+  .item {
+    outline: none;
+
+    .item_body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .item_img {
+        width: 112px;
+        height: 112px;
+        border-radius: 112px;
+      }
+
+      .item_feedback {
+        margin-top: 20px;
+        width: 410px;
+        text-align: center;
+        color: #42464e;
+      }
+
+      .item_quote {
+        width: 25px;
+        margin-top: 20px;
+      }
+      .item_name {
+        margin-top: 15px;
+      }
+      .item_year {
+        margin-top: 2px;
+      }
+    }
+  }
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 237, 237, 0.5);
+  border-radius: 40px;
+  position: absolute;
+  top: 60px;
+  transform: translate(0, -50%);
+  z-index: 5;
+  cursor: pointer;
+
+  .arrow_leftIcon {
+    position: relative;
+    right: 1px;
+    width: 12px;
+  }
+
+  .arrow_rightIcon {
+    position: relative;
+    left: 1px;
+    width: 12px;
+    transform: rotate(180deg);
+  }
+}
+
+.arrowLeft {
+  left: 90px;
+}
+
+.arrowRight {
+  right: 90px;
+}

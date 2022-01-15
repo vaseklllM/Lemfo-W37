@@ -1,0 +1,56 @@
+.backTimer {
+  .twoPoints {
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    color: #e5e3e8;
+    font-weight: 700;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timer {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+    .hour {
+      width: 52px;
+      height: 32px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-right: 4px;
+    }
+    .minute {
+      width: 52px;
+      height: 32px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .second {
+      width: 52px;
+      height: 32px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      margin-left: 4px;
+    }
+
+    .timerText {
+      font-weight: 700;
+    }
+  }
+}

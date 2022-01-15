@@ -1,0 +1,44 @@
+.RemainingForThePromotionRow {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+  .sequre {
+    display: flex;
+    align-items: center;
+
+    .sequre_text {
+      margin-left: 10px;
+      width: 100px;
+    }
+  }
+
+  .vertical_hr {
+    width: 1px;
+    background-color: #e5e5e5;
+    height: 40px;
+  }
+
+  .sequreicon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .timeLineBlock {
+    margin-left: 15px;
+
+    .timeLine {
+      height: 10px;
+      border-radius: 10px;
+      width: calc(100% - 5px);
+      background-color: #eaebed;
+      margin: 3px auto 0 auto;
+
+      .timeLine_line {
+        width: 20%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
+}

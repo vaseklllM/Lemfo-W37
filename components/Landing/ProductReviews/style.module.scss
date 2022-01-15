@@ -1,0 +1,78 @@
+.productReviews {
+  padding-bottom: 40px;
+}
+
+.title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.title_icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.rattingBlock {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  .rattingBlock_body {
+    width: 400px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+    .rattingBlock_left {
+      display: flex;
+      align-content: center;
+
+      .rattingBlock_left_medalIcon {
+        width: 25px;
+        margin-right: 8px;
+      }
+
+      .rattingBlock_left_text {
+        width: 80px;
+        display: block;
+      }
+    }
+
+    .rattingBlock_vr {
+      width: 1px;
+      height: 100%;
+      background-color: #dedfe0;
+    }
+
+    .rattingBlock_right {
+      width: 220px;
+
+      .rattingBlock_right_starts {
+        display: flex;
+        align-items: center;
+
+        .rattingBlock_right_starts_star {
+          width: 20px;
+        }
+      }
+
+      .rattingBlock_right_text {
+        margin-top: 5px;
+        display: block;
+
+        .rattingBlock_right_text_span {
+          font-size: 20px;
+          font-weight: 500;
+          color: green;
+        }
+      }
+    }
+  }
+}
+
+.causel {
+  margin-top: 30px;
+}

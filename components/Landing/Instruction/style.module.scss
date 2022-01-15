@@ -1,0 +1,40 @@
+.title {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+}
+
+.title_icon {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.step_section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .step {
+    width: 440px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .step_img {
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+    }
+
+    .step_text {
+      width: 270px;
+    }
+  }
+}

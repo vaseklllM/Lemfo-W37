@@ -1,0 +1,34 @@
+.SectionBuy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.subtitle {
+  width: 380px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.venzel {
+  margin-top: 10px;
+}
+
+.time_and_price {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hr {
+  width: 1px;
+  height: 55px;
+  margin: 0 15px;
+}
+
+.spiner {
+  margin-top: 15px;
+}

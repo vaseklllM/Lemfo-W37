@@ -1,0 +1,32 @@
+.BackTimerFirstSection {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  width: 380px;
+}
+
+.adventages_item {
+  margin-top: 7px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.button_buy {
+  width: 365px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+}
+

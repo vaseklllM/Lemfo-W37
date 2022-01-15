@@ -1,0 +1,63 @@
+.body {
+  width: 480px;
+  padding: 0;
+  margin: 0 auto;
+  background: #fff;
+
+  .title {
+    text-align: center;
+    color: rgb(24, 179, 24);
+    text-align: center;
+    width: 300px;
+    margin: 20px auto 0 auto;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    text-align: center;
+    width: 350px;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+
+  .subtitle2 {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+  }
+
+  .my_phone {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: red;
+
+    strong {
+      &:first-child {
+        font-size: 24px;
+      }
+    }
+  }
+
+  .you_phone {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+  }
+
+  .wrong_number {
+    display: block;
+    margin: 0 auto 0 auto;
+    text-align: center;
+
+    a {
+      color: #007bff;
+    }
+  }
+
+  .img {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+}
