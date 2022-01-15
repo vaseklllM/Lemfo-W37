@@ -1,5 +1,5 @@
-import Document, {Html, Head, Main, NextScript} from "next/document"
-import {FB_PIXEL_ID} from "../lib/fpixel"
+import Document, {Head, Html, Main, NextScript} from "next/document"
+import {FACEBOOK_PIXEL} from "../config";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -37,7 +37,7 @@ class MyDocument extends Document {
                 t.src=v;s=b.getElementsByTagName(e)[0];
                 s.parentNode.insertBefore(t,s)}(window, document,'script',
                 'https://connect.facebook.net/en_US/fbevents.js');
-                fbq('init', ${FB_PIXEL_ID});
+                fbq('init', ${FACEBOOK_PIXEL.ID});
               `,
             }}
           />
@@ -46,7 +46,7 @@ class MyDocument extends Document {
               height='1'
               width='1'
               style={{display: "none"}}
-              src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
+              src={`https://www.facebook.com/tr?id=${FACEBOOK_PIXEL.ID}&ev=PageView&noscript=1`}
             />
           </noscript>
         </Head>
@@ -60,3 +60,4 @@ class MyDocument extends Document {
 }
 
 export default MyDocument
+
